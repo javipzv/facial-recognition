@@ -4,7 +4,7 @@ from json import load, dump
 from deepface.DeepFace import represent
 from cv2 import imread
 
-data_file_path = "calculadoraEmbeddings.json"
+data_file_path = "json/calculadoraEmbeddings.json"
 
 # Leemos el archivo de datos json
 with open(data_file_path, "r") as read_file:

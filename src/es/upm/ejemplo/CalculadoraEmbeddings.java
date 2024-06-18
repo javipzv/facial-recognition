@@ -54,7 +54,7 @@ public class CalculadoraEmbeddings extends Agent {
 
         // Ruta al script de Python
         String Script_Path = "scripts/calculadoraEmbeddings.py";
-        String data_path = "calculadoraEmbeddings.json";
+        String data_path = "json/calculadoraEmbeddings.json";
 
         // Crear el archivo JSON con los datos
         FileWriter file = new FileWriter(data_path);

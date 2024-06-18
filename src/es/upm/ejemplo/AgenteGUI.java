@@ -78,7 +78,7 @@ public class AgenteGUI extends Agent {
     }
 
     public void AmpliarGaleria(JSONObject jsonInfo) throws JSONException {
-        String galeria_path = "galeria.json";
+        String galeria_path = "json/galeria.json";
         JSONObject galeria_data;
     
         try {
@@ -198,7 +198,7 @@ public class AgenteGUI extends Agent {
         if (nombres.length() == 0) {
             return;
         }
-        String caras_data_path = "caras.json";
+        String caras_data_path = "json/caras.json";
         // Añado los nuevos nombres y sus embeddings a los datos existentes en caras.json
         // Primero leo los datos existentes
         JSONObject caras_data = new JSONObject();

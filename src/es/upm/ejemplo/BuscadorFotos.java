@@ -52,7 +52,7 @@ public class BuscadorFotos extends Agent {
         JSONObject lista_nombres = new JSONObject(contenido);
         JSONArray nombres = lista_nombres.getJSONArray("nombres");
         
-        String galeria_path = "galeria.json";
+        String galeria_path = "json/galeria.json";
         JSONObject galeria_data;
         
         String galeria_dataStr = new String(Files.readAllBytes(Paths.get(galeria_path)));

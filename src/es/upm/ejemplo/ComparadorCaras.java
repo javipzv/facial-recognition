@@ -50,7 +50,7 @@ public class ComparadorCaras extends Agent {
 
         // Ruta al script de Python
         String Script_Path = "scripts/comparadorCaras.py";
-        String data_path = "comparadorCaras.json";
+        String data_path = "json/comparadorCaras.json";
 
         // Crear el archivo JSON con los datos
         FileWriter file = new FileWriter(data_path);

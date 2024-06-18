@@ -3,14 +3,14 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 import json
 from deepface.DeepFace import verify
 
-data_file_path = "comparadorCaras.json"
+data_file_path = "json/comparadorCaras.json"
 
 # Leemos el archivo de datos json
 with open(data_file_path, "r") as read_file:
     data = json.load(read_file)
 
 # Cargamos los datos de las caras conocidas
-known_faces_file = "caras.json"
+known_faces_file = "json/caras.json"
 with open(known_faces_file, "r") as read_file:
     known_faces = json.load(read_file)
 

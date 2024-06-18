@@ -3,7 +3,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 import json
 from deepface.DeepFace import extract_faces
 
-data_file_path = "detectorCaras.json"
+data_file_path = "json/detectorCaras.json"
 
 # Leemos el archivo de datos json
 with open(data_file_path, "r") as read_file:

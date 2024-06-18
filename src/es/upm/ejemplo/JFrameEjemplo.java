@@ -62,7 +62,7 @@ public class JFrameEjemplo extends JFrame {
 
     private void cargarSugerenciasDesdeJson() {
         try {
-            String content = new String(Files.readAllBytes(Paths.get("galeria.json")));
+            String content = new String(Files.readAllBytes(Paths.get("json/galeria.json")));
             JSONObject json = new JSONObject(content);
             JSONArray galeria = json.getJSONArray("galeria");
 

@@ -55,7 +55,7 @@ private String ejecutarScriptPython(String data) throws IOException, Interrupted
 
     // Ruta al script de Python
     String Script_Path = "scripts/detectorCaras.py";
-    String data_path = "detectorCaras.json";
+    String data_path = "json/detectorCaras.json";
     
     // Crear el archivo JSON con los datos
     FileWriter file = new FileWriter(data_path);
