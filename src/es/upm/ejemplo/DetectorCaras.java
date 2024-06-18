@@ -54,7 +54,7 @@ private String ejecutarScriptPython(String data) throws IOException, Interrupted
     System.out.println("\nEjecutando script DetectorCaras...");
 
     // Ruta al script de Python
-    String Script_Path = "detectorCaras.py";
+    String Script_Path = "scripts/detectorCaras.py";
     String data_path = "detectorCaras.json";
     
     // Crear el archivo JSON con los datos
@@ -63,7 +63,7 @@ private String ejecutarScriptPython(String data) throws IOException, Interrupted
     file.close();
 
     // Ejecutar el script
-    ProcessBuilder processBuilder = new ProcessBuilder("python", Script_Path).inheritIO();
+    ProcessBuilder processBuilder = new ProcessBuilder("py", Script_Path).inheritIO();
     Process process = processBuilder.start();
     process.waitFor();
 

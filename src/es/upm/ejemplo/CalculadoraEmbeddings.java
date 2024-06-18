@@ -53,7 +53,7 @@ public class CalculadoraEmbeddings extends Agent {
         System.out.println("\nEjecutando script CalculadoraEmbeddings...\n");
 
         // Ruta al script de Python
-        String Script_Path = "calculadoraEmbeddings.py";
+        String Script_Path = "scripts/calculadoraEmbeddings.py";
         String data_path = "calculadoraEmbeddings.json";
 
         // Crear el archivo JSON con los datos
@@ -61,7 +61,7 @@ public class CalculadoraEmbeddings extends Agent {
         file.write(data);
         file.close();
         // Ejecutar el script
-        ProcessBuilder processBuilder = new ProcessBuilder("python", Script_Path).inheritIO();
+        ProcessBuilder processBuilder = new ProcessBuilder("py", Script_Path).inheritIO();
         Process process = processBuilder.start();
         process.waitFor();
 
